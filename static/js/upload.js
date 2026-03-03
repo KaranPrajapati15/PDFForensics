@@ -61,10 +61,11 @@
             return;
         }
 
-        // Vercel Serverless Functions have a strict 4.5MB payload limit
-        const MAX_FILE_SIZE = 4.4 * 1024 * 1024; // 4.4 MB
+        // Client-side size guard (Vercel serverless cap ~4.5 MB on free plan;
+        // local / Docker deployments support up to MAX_UPLOAD_MB in config)
+        const MAX_FILE_SIZE = 100 * 1024 * 1024; // 100 MB
         if (file.size > MAX_FILE_SIZE) {
-            showError(`File is too large (${formatBytes(file.size)}). Maximum allowed size is 4.4 MB.`);
+            showError(`File is too large (${formatBytes(file.size)}). Maximum allowed size is 100 MB.`);
             return;
         }
 
