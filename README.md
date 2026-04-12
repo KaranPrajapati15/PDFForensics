@@ -224,7 +224,7 @@ PDFForensics/
 
 | Contributor | GitHub |
 |-------------|--------|
-| Abhay Katre | [@abhaykatre70](https://github.com/abhaykatre70) |
+| Abhay Katre | [@abhaykatre70](https://github.com/abhaykatre-dev) |
 | Karan Prajapati | [@KaranPrajapati15](https://github.com/KaranPrajapati15) |
 
 ---
